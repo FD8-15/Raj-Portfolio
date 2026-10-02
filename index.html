@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -27,14 +28,14 @@
             --bg-secondary: #080b10;
             --panel: #0b1016;
 
-            --accent-green: #00ff88;
-            --accent-blue: #00b4d8;
+            --accent-green: #A855F7;
+            --accent-blue: #38BDF8;
 
             --text: #e9f7f2;
             --muted: #7d8b89;
 
-            --border: rgba(0, 255, 136, 0.22);
-            --glow: rgba(0, 255, 136, 0.35);
+            --border: rgba(168, 85, 247, 0.22);
+            --glow: rgba(168, 85, 247, 0.35);
 
             --font-display: 'Orbitron', sans-serif;
             --font-body: 'Rajdhani', sans-serif;
@@ -94,8 +95,8 @@
             border: 1px solid var(--accent-green);
             border-radius: 50%;
             transition: width .2s ease,
-                        height .2s ease,
-                        border-color .2s ease;
+                height .2s ease,
+                border-color .2s ease;
         }
 
         .cursor-ring.hover {
@@ -105,6 +106,7 @@
         }
 
         @media (max-width: 768px) {
+
             .cursor-dot,
             .cursor-ring {
                 display: none;
@@ -121,15 +123,11 @@
             z-index: -5;
 
             background-image:
-                linear-gradient(
+                linear-gradient(rgba(0, 255, 136, 0.035) 1px,
+                    transparent 1px),
+                linear-gradient(90deg,
                     rgba(0, 255, 136, 0.035) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    90deg,
-                    rgba(0, 255, 136, 0.035) 1px,
-                    transparent 1px
-                );
+                    transparent 1px);
 
             background-size: 50px 50px;
         }
@@ -140,12 +138,10 @@
             pointer-events: none;
             z-index: 100;
 
-            background: repeating-linear-gradient(
-                to bottom,
-                transparent 0px,
-                transparent 3px,
-                rgba(255,255,255,.015) 4px
-            );
+            background: repeating-linear-gradient(to bottom,
+                    transparent 0px,
+                    transparent 3px,
+                    rgba(255, 255, 255, .015) 4px);
         }
 
         .glow {
@@ -405,7 +401,7 @@
         }
 
         .btn-outline:hover {
-            background: rgba(0,255,136,.08);
+            background: rgba(0, 255, 136, .08);
         }
 
         /* =========================
@@ -428,8 +424,8 @@
             padding: 12px;
 
             box-shadow:
-                0 0 30px rgba(0,255,136,.12),
-                inset 0 0 30px rgba(0,255,136,.05);
+                0 0 30px rgba(0, 255, 136, .12),
+                inset 0 0 30px rgba(0, 255, 136, .05);
         }
 
         .avatar-container::before {
@@ -572,11 +568,11 @@
 
             color: var(--accent-green);
 
-            background: rgba(0,255,136,.03);
+            background: rgba(0, 255, 136, .03);
         }
 
         .skill:hover {
-            background: rgba(0,255,136,.1);
+            background: rgba(0, 255, 136, .1);
         }
 
         @media (max-width: 800px) {
@@ -590,7 +586,7 @@
         ========================= */
 
         #projects {
-            background: rgba(0,0,0,.15);
+            background: rgba(0, 0, 0, .15);
         }
 
         .projects-grid {
@@ -609,12 +605,12 @@
 
             min-height: 250px;
 
-            background: rgba(10,15,20,.8);
+            background: rgba(10, 15, 20, .8);
 
             border: 1px solid var(--border);
 
             transition: border-color .25s ease,
-                        box-shadow .25s ease;
+                box-shadow .25s ease;
 
             transform-style: preserve-3d;
         }
@@ -623,7 +619,7 @@
             border-color: var(--accent-green);
 
             box-shadow:
-                0 0 30px rgba(0,255,136,.08);
+                0 0 30px rgba(0, 255, 136, .08);
         }
 
         .project-number {
@@ -693,11 +689,9 @@
             border: 1px solid var(--border);
 
             background:
-                linear-gradient(
-                    135deg,
-                    rgba(0,255,136,.04),
-                    rgba(0,180,216,.04)
-                );
+                linear-gradient(135deg,
+                    rgba(0, 255, 136, .04),
+                    rgba(0, 180, 216, .04));
         }
 
         .contact-box h2 {
@@ -741,7 +735,7 @@
 
             transform: translateY(-5px);
 
-            box-shadow: 0 0 20px rgba(0,255,136,.12);
+            box-shadow: 0 0 20px rgba(0, 255, 136, .12);
         }
 
         /* =========================
@@ -874,11 +868,7 @@
 
                 <div class="avatar-container">
 
-                    <img
-                        id="github-avatar"
-                        src="https://github.com/FD8-15.png"
-                        alt="Raj Naik GitHub profile"
-                    >
+                    <img id="github-avatar" src="https://github.com/FD8-15.png" alt="Raj Naik GitHub profile">
 
                 </div>
 
@@ -1042,23 +1032,13 @@
 
             <div class="socials">
 
-                <a
-                    href="https://github.com/FD8-15"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social"
-                    aria-label="GitHub"
-                >
+                <a href="https://github.com/FD8-15" target="_blank" rel="noopener noreferrer" class="social"
+                    aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a
-                    href="https://www.linkedin.com/in/Raj%20Naik/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social"
-                    aria-label="LinkedIn"
-                >
+                <a href="https://www.linkedin.com/in/Raj%20Naik/" target="_blank" rel="noopener noreferrer"
+                    class="social" aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
@@ -1565,4 +1545,5 @@
     </script>
 
 </body>
+
 </html>
